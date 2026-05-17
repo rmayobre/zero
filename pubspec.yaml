@@ -1,6 +1,6 @@
 name: zero
 description: A zero runtime cost framework for structuring code within monad-style wrappers.
-version: 1.0.0
+version: 0.0.1
 repository: https://github.com/rmayobre/zero
 
 environment:

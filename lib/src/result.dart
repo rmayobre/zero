@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'internal/eager.dart';
 import 'either.dart';
 import 'internal/throws.dart';
@@ -28,8 +30,19 @@ extension type const Result<T extends Object>._(_ResultData<T> _data) {
   /// [Result.failure] instead of propagating.
   factory Result.run(Calculation<T> compute) {
     try {
-      final T value = compute();
-      return Result.success(value);
+      return Result.success(compute());
+    } catch (error, stacktrace) {
+      return Result.failure(error, stacktrace);
+    }
+  }
+
+  /// Runs [compute] and wraps the return value in [Future] [Result.success].
+  ///
+  /// If [compute] throws, the error and current stack trace are captured in a
+  /// [Result.failure] instead of propagating.
+  static Future<Result<T>> runAsync<T extends Object>(Calculation<FutureOr<T>> compute) async {
+    try {
+      return Result.success(await compute());
     } catch (error, stacktrace) {
       return Result.failure(error, stacktrace);
     }

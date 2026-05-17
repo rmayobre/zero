@@ -5,6 +5,7 @@ export 'src/either.dart';
 export 'src/flow.dart';
 export 'src/future.dart';
 export 'src/inline.dart';
+export 'src/iterable.dart';
 export 'src/option.dart';
 export 'src/preconditions.dart';
 export 'src/result.dart';

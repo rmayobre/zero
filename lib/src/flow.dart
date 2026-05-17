@@ -107,5 +107,5 @@ extension NonNullFlowExtensions <T extends Object> on Flow<T> {
   ///
   /// The [Snapshot] holds the latest emitted value and broadcasts subsequent
   /// events to all listeners.
-  Snapshot<T> toSnapshot(T initial) => Snapshot(initial, collect());
+  Snapshot<T> snapshot(T initial) => Snapshot(initial, collect());
 }

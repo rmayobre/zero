@@ -4,7 +4,7 @@ import 'flow.dart';
 extension StreamExtensions <T> on Stream<T> {
 
   /// Wraps this [Stream] in a lazy [Flow].
-  Flow<T> asFlow() => Flow(() async* {
+  Flow<T> flow() => Flow(() async* {
     yield* this;
   });
 

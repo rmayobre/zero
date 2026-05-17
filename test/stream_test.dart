@@ -6,7 +6,7 @@ void main() {
     group('asFlow', () {
       test('wraps a stream in a lazy Flow', () async {
         final stream = Stream.fromIterable([1, 2, 3]);
-        final flow = stream.asFlow();
+        final flow = stream.flow();
         expect(await flow.collect().toList(), [1, 2, 3]);
       });
 
@@ -17,7 +17,7 @@ void main() {
           controller.add(1);
           controller.close();
         });
-        final flow = stream.asFlow();
+        final flow = stream.flow();
         expect(subscribed, isFalse);
         await flow.collect().toList();
         expect(subscribed, isTrue);

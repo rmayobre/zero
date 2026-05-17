@@ -173,12 +173,12 @@ void main() {
 
     group('NonNullFlowExtensions.toSnapshot', () {
       test('creates a Snapshot with the given initial value', () {
-        final snapshot = Flow.fromIterable([1, 2, 3]).toSnapshot(0);
+        final snapshot = Flow.fromIterable([1, 2, 3]).snapshot(0);
         expect(snapshot.value, 0);
       });
 
       test('snapshot receives values emitted by the flow', () async {
-        final snapshot = Flow.fromIterable([1, 2, 3]).toSnapshot(0);
+        final snapshot = Flow.fromIterable([1, 2, 3]).snapshot(0);
         await Future.delayed(const Duration(milliseconds: 10));
         expect(snapshot.value, 3);
       });

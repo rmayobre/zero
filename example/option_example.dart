@@ -1,4 +1,4 @@
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 // Simulated user database
 final Map<int, String> _users = {1: 'Alice', 2: 'Bob', 3: 'Carol'};

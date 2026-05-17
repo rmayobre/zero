@@ -9,7 +9,7 @@
 ///   5. Stream activity events through [Flow] and track app state with [Snapshot]
 library;
 
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 // ---------------------------------------------------------------------------
 // Domain

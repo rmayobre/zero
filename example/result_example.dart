@@ -1,4 +1,4 @@
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 Result<int> parseAge(String raw) => Result.run(() {
   final n = int.parse(raw);

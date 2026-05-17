@@ -1,4 +1,4 @@
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 // Validation returns Either<ValidUsername, String> where left = valid, right = error
 Either<String, String> validateUsername(String name) {

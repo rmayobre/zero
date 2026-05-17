@@ -1,6 +1,5 @@
-import 'package:zero/src/option.dart';
-
 import 'flow.dart';
+import 'option.dart';
 
 extension IterableExtensions <T> on Iterable<T> {
 

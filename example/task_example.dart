@@ -1,4 +1,4 @@
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 // Simulated async data sources
 Task<String> fetchUser(int id) => Task(() async {

@@ -1,4 +1,4 @@
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 // A lazy synchronous computation that reads config values
 Effect<String> readEnv(String key, String fallback) =>

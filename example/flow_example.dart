@@ -1,4 +1,4 @@
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 Stream<int> numbersStream() async* {
   for (var i = 1; i <= 10; i++) {

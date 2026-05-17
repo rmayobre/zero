@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 void main() {
   group('Option', () {

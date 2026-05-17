@@ -30,7 +30,7 @@ dependencies:
 Then import:
 
 ```dart
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 ```
 
 ## Usage
@@ -367,7 +367,7 @@ await counter.forEach((n) => print(n));
 Guard clause helpers that throw `StateError` (internal invariant violations) or `ArgumentError` (bad caller input).
 
 ```dart
-import 'package:zero/zero.dart';
+import 'package:zero_nads/zero_nads.dart';
 
 // StateError variants — for internal invariants
 check(list.isNotEmpty, () => 'list must not be empty');

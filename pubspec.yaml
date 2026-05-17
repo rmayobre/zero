@@ -1,7 +1,7 @@
-name: zero
+name: zero-nads
 description: A zero runtime cost framework for structuring code within monad-style wrappers.
 version: 0.0.1
-repository: https://github.com/rmayobre/zero
+repository: https://github.com/rmayobre/zero-nads
 
 environment:
   sdk: ^3.11.0

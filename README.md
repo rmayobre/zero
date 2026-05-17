@@ -1,4 +1,4 @@
-# zero
+# Zero Nads
 
 A Dart 3.x functional programming library built on **extension types** — zero-cost wrappers that add monadic abstractions with no runtime overhead.
 

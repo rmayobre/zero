@@ -1,1 +1,4 @@
-extension FutureExtensions<T> on Future<T> {}
+extension FutureExtensions <T> on Future<T> {
+
+
+}

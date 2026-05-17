@@ -6,6 +6,7 @@ import 'internal/typedefs.dart';
 /// This describes a sequence of operations that need to be run by an external executor.
 @lazy
 extension type const Effect<T extends Object>(Calculation<T> _compute) {
+
   /// Executes the synchronous computation to get the result.
   /// This method is synchronous in terms of the monad's execution, but the computation itself might involve blocking I/O if the caller handles it.
   ///

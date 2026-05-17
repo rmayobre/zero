@@ -72,6 +72,5 @@ T requireTypeOf<T>(dynamic value, [String Function()? message]) {
 /// Always throws [UnimplementedError] with an optional [message].
 ///
 /// Use as a placeholder for code that has not yet been implemented.
-// ignore: non_constant_identifier_names
 @throws
-Never TODO([String? message]) => throw UnimplementedError(message);
+Never TODO([String? message]) => throw UnimplementedError(message); // ignore: non_constant_identifier_names

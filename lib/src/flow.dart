@@ -71,7 +71,7 @@ extension type const Flow<T>._(Calculation<Stream<T>> _compute) {
   Flow<T> catchErrors() => Flow(() => _compute().transform(
     StreamTransformer.fromHandlers(
       handleData: (data, sink) => sink.add(data),
-      handleError: (_, __, ___) {},
+      handleError: (_, _, _) {},
     ),
   ));
 

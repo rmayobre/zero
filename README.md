@@ -24,7 +24,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  zero: ^1.0.0
+  zero_nads: ^1.0.0
 ```
 
 Then import:
